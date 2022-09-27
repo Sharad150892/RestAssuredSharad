@@ -17,7 +17,7 @@ public class TC002_POST_Request {
 		RestAssured.baseURI = "https://reqres.in/";
 
 		// Request Object
-		RequestSpecification httpRequest = RestAssured.given();
+		RequestSpecification httpRequest = RestAssured.given().log().all();
 
 		// Request PayLoad sending along with post request
 		JSONObject requestParam = new JSONObject();
