@@ -42,6 +42,7 @@ public class TC001_GET_Request {
 		long responsetime = response.getTime();
 		System.out.println("Response Time : "+responsetime);
 		ValidatableResponse validateResponse = response.then().log().all();
+		System.out.println("Validate Response :-"+validateResponse);
 		validateResponse.statusCode(200);
 		validateResponse.time(Matchers.lessThan(5000L));
 	}

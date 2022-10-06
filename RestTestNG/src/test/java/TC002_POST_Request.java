@@ -11,6 +11,7 @@ import io.restassured.specification.RequestSpecification;
 
 public class TC002_POST_Request {
 
+ 
 	@Test
 	void validatePostMethod() {
 		// Specify base URI
